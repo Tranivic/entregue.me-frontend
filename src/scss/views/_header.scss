@@ -1,3 +1,19 @@
-.header{
-    
+.header {
+  .h-container {
+    background-color: $main-color;
+    @include flex(center);
+    height: 7rem;
+    .level-left {
+      @include fill;
+      @include flex(center);
+    }
+    .level-right {
+      @include fill;
+      @include flex(center);
+    }
+  }
+  .navbar-menu {
+    background-color: $main-white;
+    height: 4.1rem;
+  }
 }
