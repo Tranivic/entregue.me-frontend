@@ -1,5 +1,7 @@
 <template>
-  <div class="header">Isso é um header</div>
+  <div class="header">
+    Teste
+  </div>
 </template>
 
 <script>

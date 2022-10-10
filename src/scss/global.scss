@@ -1,6 +1,10 @@
 // Setup and Variables
-@import "./base/responsive";
+@import "./base/reset";
 @import "./setup/variables";
 
+//Mixins
+@import"./setup/mixins.scss";
+
 //Views (Website structure)
-@import "./views/header"
+@import "./views/header";
+
