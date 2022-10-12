@@ -1,15 +1,108 @@
 .header {
-  .h-container {
-    background-color: $main-color;
+  .superior {
+    background-color: $main-yellow;
     @include flex(center);
     height: 7rem;
-    .level-left {
-      @include fill;
+    justify-content: space-between;
+
+    .logo-container {
       @include flex(center);
+      height: 100%;
+      margin-left: 29rem;
+      margin-top: 3rem;
+
+      .info-container {
+        @include flex(center);
+        margin-top: 5rem;
+        background-color: $main-white;
+        padding: $base-padding 2rem;
+        border-radius: $base-radius;
+
+        img {
+          border-radius: $base-radius;
+          width: 6.4rem;
+          height: 6.4rem;
+          background-color: cadetblue;
+        }
+
+        .info {
+          @include flex(start);
+          @include fill;
+          flex-direction: column;
+          padding-left: 1.5rem;
+          .title {
+            color: $main-yellow;
+            font-size: $title-font-size;
+            font-family: $base-font-family;
+            font-weight: $title-weight;
+          }
+          .status {
+            @include flex(center);
+            @include fill;
+            flex-direction: row;
+            margin-top: 1rem;
+            color: $main-black;
+
+            .ball {
+              background-color: $main-red;
+              width: 1.1rem;
+              height: 1.1rem;
+              border-radius: 50%;
+              margin: 0 0.5rem 0.4rem 0;
+            }
+            .text {
+              font-size: $base-font-size;
+              font-family: $base-font-family;
+              font-weight: $title-weight;
+            }
+          }
+        }
+      }
     }
-    .level-right {
-      @include fill;
+
+    .search-container {
       @include flex(center);
+      height: 100%;
+      margin-right: 29rem;
+
+      .input-container {
+        @include flex(center);
+        @include fill;
+        padding-right: 3rem;
+        i {
+          color: $main-white;
+          margin-right: -2.6rem;
+        }
+        input {
+          color: $main-white;
+          background-color: transparent;
+          font-family: $base-font-family;
+          font-weight: $title-weight;
+          border: 0.1rem solid white;
+          border-radius: 6rem;
+          padding: 0.5rem 5rem 0.5rem 3rem ;
+        }
+        ::placeholder {
+          color: $main-white;
+        }
+        :focus {
+          outline: none;
+        }
+      }
+      .line-divisor {
+        width: 0.5rem;
+        height: 6rem;
+        background-color: $main-black;
+        opacity: 0.2;
+      }
+      .btn-container {
+        @include flex(center);
+        @include fill;
+        padding-left: 3rem;
+
+        button {
+        }
+      }
     }
   }
   .navbar-menu {
