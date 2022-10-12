@@ -132,4 +132,8 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.header .h-container {
+  background-color: .header .h-container main-color;
 }/*# sourceMappingURL=global.css.map */
