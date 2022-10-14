@@ -69,29 +69,19 @@
         @include flex(center);
         @include fill;
         padding-right: 3rem;
+
         i {
           color: $main-white;
           margin-right: -2.6rem;
+          z-index: 1000;
         }
         input {
-          color: $main-white;
-          background-color: transparent;
-          font-family: $base-font-family;
-          font-weight: $title-weight;
-          border: 0.1rem solid white;
-          border-radius: 6rem;
-          padding: 0.5rem 5rem 0.5rem 3rem ;
-        }
-        ::placeholder {
-          color: $main-white;
-        }
-        :focus {
-          outline: none;
+          @include search-input;
         }
       }
       .line-divisor {
-        width: 0.5rem;
-        height: 6rem;
+        width: 0.6rem;
+        height: 5.5rem;
         background-color: $main-black;
         opacity: 0.2;
       }
@@ -101,11 +91,15 @@
         padding-left: 3rem;
 
         button {
+          @include white-btn;
+          i {
+            margin-right: 0.5rem;
+          }
         }
       }
     }
   }
-  .navbar-menu {
+  .inferior {
     background-color: $main-white;
     height: 4.1rem;
   }

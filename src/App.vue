@@ -21,15 +21,20 @@
       <div class="search-container">
         <div class="input-container">
           <i class="fa fa-search"></i>
-          <input type="text" placeholder="Buscar produtos" />
+          <input type="text" placeholder="Buscar produtos..." />
         </div>
         <div class="line-divisor"></div>
         <div class="btn-container">
-          <button>Fazer login ou cadastro</button>
+          <button>
+            <i class="fa fa-sign-out"></i>
+            Fazer login ou cadastro
+          </button>
         </div>
       </div>
     </div>
-    <div class="navbar-menu"></div>
+    <div class="inferior">
+      <i></i>
+    </div>
   </div>
 </template>
 
