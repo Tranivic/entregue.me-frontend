@@ -1,3 +1,4 @@
+//Shortcuts
 @mixin flex($argument) {
   display: flex;
   align-items: $argument;
@@ -7,4 +8,44 @@
 @mixin fill {
   width: 100%;
   height: 100%;
+}
+
+// Buttons
+@mixin white-btn {
+  @include flex(center);
+  color: $main-yellow;
+  padding: 0.7rem;
+  cursor: pointer;
+  border: none;
+  font-family: $base-font-family;
+  font-weight: $title-weight;
+  font-size: $base-font-size;
+  border-radius: 0.3rem;
+  background-color: $main-white;
+  &:hover {
+    background-color: darken($main-white, 3%);
+  }
+}
+
+
+//Inputs
+@mixin search-input {
+  color: $main-white;
+  background-color: lighten($main-yellow, 1.8%);
+  font-family: $base-font-family;
+  font-weight: $title-weight;
+  font-size: $base-font-size;
+  border-radius: 6rem;
+  border: none;
+  padding: 0.7rem 15rem 0.7rem 3.4rem;
+
+  &:hover {
+    outline: solid lighten($main-black, 30%) 0.1rem;
+  }
+  &::placeholder {
+    color: $main-white;
+  }
+  &:focus {
+    outline: none;
+  }
 }
