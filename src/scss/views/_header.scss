@@ -8,7 +8,7 @@ header {
     .logo-container {
       @include flex(center);
       height: 100%;
-      margin-left: 29rem;
+      margin-left: $container-margin;
       margin-top: 3rem;
 
       .info-container {
