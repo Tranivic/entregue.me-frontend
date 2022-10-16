@@ -1,4 +1,4 @@
-.header {
+header {
   .superior {
     background-color: $main-yellow;
     @include flex(center);
@@ -63,7 +63,7 @@
     .search-container {
       @include flex(center);
       height: 100%;
-      margin-right: 29rem;
+      margin-right: $container-margin;
 
       .input-container {
         @include flex(center);
@@ -80,11 +80,9 @@
         }
       }
       .line-divisor {
-        width: 0.6rem;
-        height: 5.5rem;
-        background-color: $main-black;
-        opacity: 0.2;
+        @include line-divisor(0.6rem);
       }
+
       .btn-container {
         @include flex(center);
         @include fill;
@@ -100,7 +98,29 @@
     }
   }
   .inferior {
+    @include flex(center);
+    @include fill;
     background-color: $main-white;
     height: 4.1rem;
+    font-family: $base-font-family;
+    font-weight: $text-weight;
+    font-size: $base-font-size;
+    color: $main-black;
+
+    .navbar {
+      @include flex(center);
+      @include fill;
+      justify-content: end;
+      margin-right: $container-margin;
+      
+      i,
+      h2,
+      div {
+        margin-right: $base-padding;
+      }
+      .line-divisor {
+        @include line-divisor(0.2rem);
+      }
+    }
   }
 }

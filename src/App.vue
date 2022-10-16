@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header>
     <div class="superior">
       <div class="logo-container">
         <div class="info-container">
@@ -33,9 +33,17 @@
       </div>
     </div>
     <div class="inferior">
-      <i></i>
+      <div class="navbar">
+        <i class="fa-solid fa-credit-card"></i>
+        <div class="line-divisor"></div>
+        <i class="fa-solid fa-motorcycle"></i>
+        <h2>Prazo para entrega - 30 á 45 min</h2>
+        <div class="line-divisor"></div>
+        <i class="fa-solid fa-person-walking"></i>
+        <h2>Prazo para retirada - 30 á 45 min</h2>
+      </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
