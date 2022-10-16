@@ -1,0 +1,14 @@
+main {
+  @include flex(center);
+  flex-direction: column;
+  @include fill;
+
+  .title {
+    font-family: $base-font-family;
+    font-weight: $title-weight;
+    font-size: $title-font-size;
+    color: $main-black;
+    padding-top: 4.5rem;
+    width: 60%;
+  }
+}
