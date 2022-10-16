@@ -45,14 +45,16 @@
     </div>
   </header>
   <main>
-    <div class="title">
-      <h1>Cardápio</h1>
-    </div>
-    <div class="carrousel"></div>
-    <div class="title">
-      <h1>Produtos</h1>
-    </div>
-    <section></section>
+    <section class="menu">
+      <div class="title">
+        <h1>Cardápio</h1>
+      </div>
+      <div class="carrousel">item1</div>
+      <div class="title">
+        <h1>Produtos</h1>
+      </div>
+      <section></section>
+    </section>
   </main>
   <footer></footer>
 </template>

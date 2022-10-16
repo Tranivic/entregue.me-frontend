@@ -1,14 +1,22 @@
 main {
   @include flex(center);
-  flex-direction: column;
   @include fill;
+  flex-direction: column;
+  background-color: yellow;
 
-  .title {
-    font-family: $base-font-family;
-    font-weight: $title-weight;
-    font-size: $title-font-size;
-    color: $main-black;
-    padding-top: 4.5rem;
-    width: 60%;
+  .menu {
+    width: 70%;
+
+    .title {
+      font-family: $base-font-family;
+      font-weight: $title-weight;
+      font-size: $title-font-size;
+      color: $main-black;
+      padding-top: 4.5rem;
+    }
+
+    .carrousel {
+      background-color: aqua;
+    }
   }
 }
