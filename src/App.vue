@@ -49,7 +49,7 @@
       <div class="title">
         <h1>Cardápio</h1>
       </div>
-      <div class="carrousel">item1</div>
+      <CarouselSlider />
       <div class="title">
         <h1>Produtos</h1>
       </div>
@@ -60,9 +60,10 @@
 </template>
 
 <script>
+import CarouselSlider from "./components/CarouselSlider/CarouselSlider.vue";
 export default {
   name: "App",
-  components: {},
+  components: { CarouselSlider },
 };
 </script>
 

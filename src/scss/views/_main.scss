@@ -2,7 +2,6 @@ main {
   @include flex(center);
   @include fill;
   flex-direction: column;
-  background-color: yellow;
 
   .menu {
     width: 70%;
@@ -12,11 +11,7 @@ main {
       font-weight: $title-weight;
       font-size: $title-font-size;
       color: $main-black;
-      padding-top: 4.5rem;
-    }
-
-    .carrousel {
-      background-color: aqua;
+      padding-top: 4rem;
     }
   }
 }
