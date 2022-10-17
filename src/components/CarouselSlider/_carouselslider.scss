@@ -1,0 +1,8 @@
+.carousel {
+  @include fill;
+  margin-top: 4rem;
+
+  button {
+    color: $main-yellow;
+  }
+}
