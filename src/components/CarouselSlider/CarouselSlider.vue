@@ -1,14 +1,15 @@
 <template lang="">
-    <carousel class="carousel" :items-to-show="8">
-      <slide v-for="slide in 10" :key="slide">
-        <h1>exemple</h1>
-      </slide>
-
-      <template #addons>
-        <navigation />
-        <pagination />
-      </template>
-    </carousel>
+  <carousel class="carousel" :items-to-show="8">
+    <slide v-for="slide in 10" :key="slide">
+      <div class="filter">
+        <h1>Filtro aqui{{slide}}</h1>
+      </div>
+    </slide>
+    <template #addons>
+      <navigation />
+      <pagination />
+    </template>
+  </carousel>
 </template>
 
 <script>

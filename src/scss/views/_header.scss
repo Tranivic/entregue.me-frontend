@@ -1,7 +1,7 @@
 header {
   .superior {
-    background-color: $main-yellow;
     @include flex(center);
+    background-color: $main-yellow;
     height: 7rem;
     justify-content: space-between;
 

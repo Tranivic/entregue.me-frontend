@@ -1,11 +1,5 @@
 main {
-  @include flex(center);
-  @include fill;
-  flex-direction: column;
-
   .menu {
-    width: 70%;
-
     .title {
       font-family: $base-font-family;
       font-weight: $title-weight;
