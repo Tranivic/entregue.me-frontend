@@ -5,7 +5,6 @@
   }
   button {
     color: $main-yellow;
-    background-color: $main-white;
   }
 
   .filter {
@@ -15,5 +14,7 @@
     font-weight: $title-weight;
     border-radius: $base-radius;
     padding: 0.5rem 1rem;
+    font-size: $base-font-size;
+    cursor: pointer;
   }
 }

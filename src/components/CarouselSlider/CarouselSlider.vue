@@ -1,36 +1,35 @@
 <template lang="">
-<carousel class="carousel" :items-to-show="8">
+  <carousel class="carousel" :items-to-show="8">
     <slide v-for="slide in 10" :key="slide">
-        <div class="filter">
-            <h1>Filtro aqui{{ slide }}</h1>
-        </div>
+      <div class="filter">
+        <h1>Filtro {{ slide }} aqui</h1>
+      </div>
     </slide>
     <template #addons>
-        <navigation />
-        <pagination />
+      <navigation />
+      <pagination />
     </template>
-</carousel>
+  </carousel>
 </template>
 
 <script>
 import "vue3-carousel/dist/carousel.css";
-import {
-    Carousel,
-    Slide,
-    Navigation
-} from "vue3-carousel";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
 //Pagination not used yet
 
 export default {
-    name: "App",
-    components: {
-        Carousel,
-        Slide,
-        Navigation,
-    },
+  name: "App",
+  data() {
+    return {};
+  },
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
+  },
 };
 </script>
 
 <style lang="scss">
-@import "./carouselslider";
+@import "./CarouselSlider"
 </style>

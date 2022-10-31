@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 
 import App from './App.vue';
-import CarouselSlider from "./components/CarouselSlider/CarouselSlider.vue"
+import ProductCard from "./components/ProductCard/ProductCard.vue"
 
 
 const app = createApp(App);
 
-app.component('CarouselSlider', CarouselSlider)
+app.component('ProductCard', ProductCard)
 
 app.mount('#app');

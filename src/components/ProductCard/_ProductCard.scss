@@ -1,0 +1,46 @@
+.card {
+  @include flex(start);
+  @include fill;
+  flex-direction: column;
+  color: $main-black;
+  background-color: $main-white;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: .2s;
+  border-radius: $base-radius;
+  
+  .superior-card {
+    @include flex(start);
+    @include fill;
+    img {
+      border-radius: $base-radius;
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+    .card-info {
+      padding-left: $base-padding;
+      h1 {
+        font-size: $base-font-size;
+        font-family: $base-font-family;
+        font-weight: $title-weight;
+      }
+      p {
+        margin: 1rem 0 3rem 0;
+        font-size: $base-font-size;
+        font-family: $base-font-family;
+        font-weight: $text-weight;
+      }
+    }
+  }
+  .inferior-card {
+    @include flex(end);
+    @include fill;
+    padding-top: 1rem;
+    .card-icons {
+      font-size: 1.7rem;
+    }
+  }
+  &:hover {
+    background-color: lighten($main-black, 65%);
+  }
+}

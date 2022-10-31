@@ -1,32 +1,33 @@
 <template>
-<main>
+  <main>
     <section class="menu">
-        <div class="title">
-            <h1>Cardápio</h1>
-        </div>
+      <div class="filter">
+        <h1 class="title">Cardápio</h1>
         <CarouselSlider />
-        <div class="title">
-            <h1>Produtos</h1>
-        </div>
-        <section></section>
+      </div>
+      <div class="list">
+        <h1 class="title">Produtos</h1>
+        <ProductList />
+      </div>
     </section>
-</main>
+  </main>
 </template>
 
 <script>
+import CarouselSlider from "../CarouselSlider/CarouselSlider.vue";
+import ProductList from "../ProductList/ProductList.vue";
 
 export default {
-    data() {
-        return {
-            
-        }
-    },
-    components: {
-        
-    },
+  data() {
+    return {};
+  },
+  components: {
+    CarouselSlider,
+    ProductList,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "./AppMain"
+@import "./AppMain";
 </style>

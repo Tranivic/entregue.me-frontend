@@ -51,7 +51,7 @@ header {
               margin: 0 0.5rem 0.4rem 0;
             }
             .text {
-              font-size: $text-font-size;
+              font-size: $base-font-size;
               font-family: $base-font-family;
               font-weight: $title-weight;
             }
@@ -104,7 +104,7 @@ header {
     height: 4.1rem;
     font-family: $base-font-family;
     font-weight: $text-weight;
-    font-size: $text-font-size;
+    font-size: $base-font-size;
     color: $main-black;
 
     .navbar {
@@ -112,7 +112,7 @@ header {
       @include fill;
       justify-content: end;
       margin-right: $container-margin;
-      
+
       i,
       h2,
       div {

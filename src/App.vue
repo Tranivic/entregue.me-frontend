@@ -1,8 +1,6 @@
 <template>
 <AppHeader />
-<app-main>
-    <CarouselSlider />
-</app-main>
+<AppMain/>
 </template>
 
 <script>
