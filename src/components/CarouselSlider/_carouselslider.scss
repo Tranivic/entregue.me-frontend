@@ -1,20 +1,19 @@
 .carousel {
   @include flex(center);
   .carousel__viewport {
-    width: 90%;
+    width: 95%;
   }
   button {
     color: $main-yellow;
   }
-
   .filter {
     background-color: $main-white;
     font-family: $base-font-family;
     color: $main-black;
     font-weight: $title-weight;
-    border-radius: $base-radius;
-    padding: 0.5rem 1rem;
     font-size: $base-font-size;
+    background-color: $main-white;
+    padding: .8rem;
     cursor: pointer;
   }
 }

@@ -41,6 +41,6 @@
     }
   }
   &:hover {
-    background-color: lighten($main-black, 65%);
+    background-color: darken($main-white, 10%);
   }
 }
