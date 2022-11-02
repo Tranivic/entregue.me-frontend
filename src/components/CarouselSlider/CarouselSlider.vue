@@ -1,8 +1,8 @@
 <template>
-  <carousel class="carousel" :items-to-show="8">
+  <carousel class="carousel" :items-to-show="9">
     <slide class="slide" v-for="slide in 20" :key="slide">
       <div class="filter">
-        <h1 class="slide-name">Pão de açucar com salgado</h1>
+        <h1 class="slide-name">Exemplo de filtro {{slide}}</h1>
       </div>
     </slide>
     <template #addons>

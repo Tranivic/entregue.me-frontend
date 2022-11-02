@@ -41,6 +41,6 @@
     }
   }
   &:hover {
-    background-color: darken($main-white, 10%);
+    transform: translatey(-.5rem);
   }
 }
