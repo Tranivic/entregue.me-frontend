@@ -110,7 +110,7 @@ header {
     .navbar {
       @include flex(center);
       @include fill;
-      justify-content: end;
+      justify-content: flex-end;
       margin-right: $container-margin;
 
       i,

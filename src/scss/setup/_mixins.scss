@@ -1,8 +1,12 @@
 //Shortcuts
 @mixin flex($position) {
-  display: flex;
-  align-items: $position;
-  justify-content: $position;
+  @if $position == center{
+    display: flex;
+    align-items: $position;
+  } @else{
+    display: flex;
+    justify-content: 'flex-'$position;
+  }
 }
 
 @mixin fill {
