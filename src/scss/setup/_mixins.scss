@@ -3,9 +3,11 @@
   @if $position == center{
     display: flex;
     align-items: $position;
+    justify-content: $position;
   } @else{
     display: flex;
-    justify-content: 'flex-'$position;
+    justify-content: flex-+$position;
+    align-items: flex-+$position;
   }
 }
 
