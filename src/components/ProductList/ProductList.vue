@@ -2,10 +2,6 @@
   <section class="list-container">
     <ul class="list">
       <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
     </ul>
   </section>
 </template>

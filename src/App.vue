@@ -4,8 +4,8 @@
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader/AppHeader.vue";
-import AppMain from "./components/AppMain/AppMain.vue";
+import AppHeader from "./components/UI/AppHeader/AppHeader.vue";
+import AppMain from "./components/UI/AppMain/AppMain.vue";
 
 export default {
     name: "App",

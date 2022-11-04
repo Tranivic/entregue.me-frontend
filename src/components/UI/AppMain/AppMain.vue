@@ -3,7 +3,7 @@
     <section class="menu">
       <div class="filter">
         <h1 class="title">Cardápio</h1>
-        <CarouselSlider />
+        <CarouselSlider/>
       </div>
       <div class="list">
         <h1 class="title">Produtos</h1>
@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import CarouselSlider from "../CarouselSlider/CarouselSlider.vue";
-import ProductList from "../ProductList/ProductList.vue";
+import CarouselSlider from "../../CarouselSlider/CarouselSlider.vue";
+import ProductList from "../../ProductList/ProductList.vue";
 
 export default {
   data() {
