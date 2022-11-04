@@ -48,6 +48,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
+<!-- Dont scope the carousel -->
+<style lang="scss">
 @import '_CarouselSlider.scss';
 </style>
