@@ -1,34 +1,53 @@
 <template>
-  <carousel class="carousel" :items-to-show="9">
-    <slide class="slide" v-for="slide in 20" :key="slide">
-      <div class="filter">
-        <h1 class="slide-name">Exemplo de filtro {{slide}}</h1>
-      </div>
-    </slide>
+  <Carousel :settings="settings" :breakpoints="breakpoints" >
+    <Slide v-for="slide in 10" :key="slide">
+      <div class="carousel__item">Exemplo aqui...</div>
+    </Slide>
     <template #addons>
-      <navigation />
-      <!-- <Pagination> not used -->
+      <Navigation />
     </template>
-  </carousel>
+  </Carousel>
 </template>
 
 <script>
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation} from "vue3-carousel";
+import { defineComponent } from 'vue'
+import { Carousel, Navigation, Slide } from 'vue3-carousel'
 
-export default {
-  name: "App",
-  data() {
-    return {};
-  },
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent({
+  name: 'CarouselSlider',
   components: {
     Carousel,
     Slide,
     Navigation,
   },
-};
+  data: () => ({
+
+    // carousel settings
+    settings: {
+      itemsToShow: 1,
+      snapAlign: 'center',
+      mouseDrag: true,
+    },
+    
+    // Carousel breakpoints
+    breakpoints: {
+      700: {
+        itemsToShow: 3.5,
+        snapAlign: 'center',
+        mouseDrag: false,
+      },
+      1024: {
+        itemsToShow: 5,
+        snapAlign: 'start',
+        mouseDrag: false,
+      },
+    },
+  }),
+})
 </script>
 
 <style lang="scss">
-@import "./CarouselSlider"
+@import '_CarouselSlider.scss';
 </style>
