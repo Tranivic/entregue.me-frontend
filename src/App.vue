@@ -1,6 +1,6 @@
 <template>
-<AppHeader />
-<AppMain/>
+  <AppHeader />
+  <AppMain />
 </template>
 
 <script>
@@ -8,11 +8,11 @@ import AppHeader from "./components/UI/AppHeader/AppHeader.vue";
 import AppMain from "./components/UI/AppMain/AppMain.vue";
 
 export default {
-    name: "App",
-    components: {
-        AppHeader,
-        AppMain,
-    },
+  name: "App",
+  components: {
+    AppHeader,
+    AppMain,
+  },
 };
 </script>
 

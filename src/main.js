@@ -1,11 +1,10 @@
-import { createApp } from 'vue'
-
-import App from './App.vue';
-import ProductCard from "./components/ProductCard/ProductCard.vue"
-
+import { createApp } from "vue";
+import store from "./store";
+import App from "./App.vue";
+import ProductCard from "./components/ProductCard/ProductCard.vue";
 
 const app = createApp(App);
 
-app.component('ProductCard', ProductCard)
-
-app.mount('#app');
+app.component("ProductCard", ProductCard);
+app.use(store);
+app.mount("#app");

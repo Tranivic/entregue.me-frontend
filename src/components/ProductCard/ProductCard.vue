@@ -1,11 +1,14 @@
 <template>
   <li class="card">
     <div class="superior-card">
-      <img src="../../assets/no-picture.svg" alt="Imagem ilustrativa do prato" />
+      <img
+        src="../../assets/no-picture.svg"
+        alt="Imagem ilustrativa do prato"
+      />
       <div class="card-info">
-        <h1>Vinho tinto Cavas del Artesano cabernet sauvignon argentina</h1>
-        <p>Vinho tinto Cavas del Artesano cabernet sauvignon argentina</p>
-        <h1>A partir de R$ 34,25</h1>
+        <h1>{{product.name}}</h1>
+        <p>{{product.description}}</p>
+        <h1 v-if="product.price">R$ {{product.price}}</h1>
       </div>
     </div>
     <div class="inferior-card">
@@ -17,7 +20,9 @@
   </li>
 </template>
 <script>
-export default {};
+export default {
+  props: ["product"],
+};
 </script>
 <style lang="scss" scoped>
 @import "./ProductCard";

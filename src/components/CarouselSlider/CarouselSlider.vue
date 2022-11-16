@@ -1,7 +1,7 @@
 <template>
   <Carousel :settings="settings" :breakpoints="breakpoints" >
     <Slide v-for="slide in 10" :key="slide">
-      <div class="carousel__item">Exemplo aqui...</div>
+      <div class="carousel__item">Exemplo {{slide}} aqui!</div>
     </Slide>
     <template #addons>
       <Navigation />
