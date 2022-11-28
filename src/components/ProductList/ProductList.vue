@@ -1,33 +1,32 @@
 <template>
-  <section class="list-container">
+<section class="list-container">
     <ul class="list">
-      <ProductCard v-for="product in showProducts" :key="product.name" :product="product" />
+        <ProductCard v-for="product in showProducts" :key="product.id" :product="product" />
     </ul>
-  </section>
+</section>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      currentPage: 1,
-      allProducts: [],
-    };
-  },
+    data() {
+        return {
+            currentPage: 1,
+        };
+    },
 
-  methods: {
-    fetchCurrentPage() {
-      this.$store.dispatch("fetchProducts", this.currentPage);
+    methods: {
+        fetchCurrentPage() {
+            this.$store.dispatch("prods/fetchProducts", this.currentPage);
+        },
     },
-  },
-  computed: {
-    showProducts() {
-      return this.$store.getters.getProducts;
+    computed: {
+        showProducts() {
+            return this.$store.getters['prods/getProducts']
+        },
     },
-  },
-  mounted() {
-    this.fetchCurrentPage();
-  },
+    mounted() {
+        this.fetchCurrentPage();
+    },
 };
 </script>
 
