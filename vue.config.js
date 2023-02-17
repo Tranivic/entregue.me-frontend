@@ -17,7 +17,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        additionalData: '@import "~@/scss/setup/_variables.scss"; @import "~@/scss/setup/_mixins.scss";'
+        additionalData: '@import "~@/assets/scss/setup/_variables.scss"; @import "~@/assets/scss/setup/_mixins.scss";'
       }
     }
   }
