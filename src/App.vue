@@ -1,21 +1,18 @@
 <template>
-<AppHeader />
-<AppMain />
+  <app-header></app-header>
 </template>
 
 <script>
-import AppHeader from "./components/UI/AppHeader/AppHeader.vue";
-import AppMain from "./components/UI/AppMain/AppMain.vue";
+import AppHeader from './layouts/AppHeader/AppHeader.vue';
 
 export default {
-    name: "App",
-    components: {
-        AppHeader,
-        AppMain,
-    },
+  name: 'App',
+  components: {
+    AppHeader,
+  },
 };
 </script>
 
 <style lang="scss">
-@import "./scss/global.scss";
+@import './assets/scss/global.scss';
 </style>
