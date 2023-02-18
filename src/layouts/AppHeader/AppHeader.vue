@@ -14,13 +14,13 @@
             </div>
         </div>
         <div class="search-container">
-            <div class="input-container">
+            <!-- <div class="input-container">
                 <i class="fa fa-search"></i>
                 <input type="text" placeholder="Buscar produtos..." />
-            </div>
-            <div class="line-divisor"></div>
+            </div> -->
+            <!-- <div class="line-divisor"></div> -->
             <div class="btn-container">
-                <button>
+                <button class="auth-btn">
                     <i class="fa fa-sign-out"></i>
                     Fazer login ou cadastro
                 </button>
@@ -46,6 +46,7 @@ export default {
     data() {
         return {};
     },
+    methods: {},
     components: {},
 };
 </script>
