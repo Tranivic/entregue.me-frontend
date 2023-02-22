@@ -1,0 +1,56 @@
+.dark-filter {
+  background-color: rgba(0, 0, 0, 0.452);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  .side-menu {
+    background-color: $main-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40rem;
+    height: 100vh;
+    .side-menu-header {
+      font-family: $base-font-family;
+      font-size: $title-font-size;
+      background-color: $main-yellow;
+      color: $main-white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $base-padding;
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        i {
+          color: $main-white;
+          border-radius: 90%;
+          border: $main-white solid 0.1rem;
+          font-size: 2rem;
+          padding: 0.1rem 0.5rem;
+        }
+      }
+    }
+    .side-menu-content {
+      // nothing yet
+    }
+    .side-menu-footer {
+      display: flex;
+      justify-content: center;
+      button {
+        @include btn-default;
+        font-size: $title-font-size;
+        width: 90%;
+        background-color: $main-yellow;
+        color: $main-white;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -89,7 +89,7 @@ header {
         padding-left: 3rem;
 
         button {
-          @include white-btn;
+          @include btn-default;
           i {
             margin-right: 0.5rem;
           }

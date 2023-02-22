@@ -24,9 +24,8 @@
 }
 
 // Buttons
-@mixin white-btn {
+@mixin btn-default {
   @include flex(center);
-  color: $main-yellow;
   padding: 0.7rem;
   cursor: pointer;
   border: none;
@@ -34,10 +33,6 @@
   font-weight: $title-weight;
   font-size: $base-font-size;
   border-radius: 0.3rem;
-  background-color: $main-white;
-  &:hover {
-    background-color: darken($main-white, 3%);
-  }
 }
 
 //Inputs
