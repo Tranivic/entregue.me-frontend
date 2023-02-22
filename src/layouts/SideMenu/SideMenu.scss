@@ -15,6 +15,7 @@
     justify-content: space-between;
     width: 40rem;
     height: 100vh;
+    
     .side-menu-header {
       font-family: $base-font-family;
       font-size: $title-font-size;
@@ -30,26 +31,26 @@
         cursor: pointer;
         i {
           color: $main-white;
-          border-radius: 90%;
+          border-radius: 50%;
           border: $main-white solid 0.1rem;
           font-size: 2rem;
-          padding: 0.1rem 0.5rem;
+          padding: 0.6rem 1rem;
         }
       }
     }
     .side-menu-content {
-      // nothing yet
+        padding: $base-padding;
     }
     .side-menu-footer {
       display: flex;
       justify-content: center;
       button {
         @include btn-default;
+        width: 100%;
         font-size: $title-font-size;
-        width: 90%;
         background-color: $main-yellow;
         color: $main-white;
-        margin-bottom: 1rem;
+        margin: $base-margin;
       }
     }
   }
