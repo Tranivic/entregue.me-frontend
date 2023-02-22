@@ -1,13 +1,13 @@
 //Shortcuts
 @mixin flex($position) {
-  @if $position == center{
+  @if $position == center {
     display: flex;
     align-items: $position;
     justify-content: $position;
-  } @else{
+  } @else {
     display: flex;
-    justify-content: flex-+$position;
-    align-items: flex-+$position;
+    justify-content: flex- + $position;
+    align-items: flex- + $position;
   }
 }
 

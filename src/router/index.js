@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView/HomeView.vue';
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -10,12 +12,12 @@ const router = createRouter({
       path: '/home',
       alias: '/page/1',
       name: 'home',
-      component: () => import('../views/HomeView/HomeView.vue'),
+      component: HomeView,
     },
     {
       path: '/categoria/:id',
       name: 'categoria',
-      component: () => import('../views/HomeView/HomeView.vue'),
+      component: HomeView,
       props: true,
     },
   ],

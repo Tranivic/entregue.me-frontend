@@ -90,6 +90,7 @@ header {
 
         button {
           @include btn-default;
+          color: $main-yellow;
           i {
             margin-right: 0.5rem;
           }
