@@ -1,9 +1,11 @@
 import { createStore } from 'vuex';
 import productsModule from './modules/products.js';
+import authModule from './modules/auth.js';
 
 const store = createStore({
   modules: {
-    prods: productsModule,
+    products: productsModule,
+    auth: authModule,
   },
   state: {
     sideMenuIsOpen: false,

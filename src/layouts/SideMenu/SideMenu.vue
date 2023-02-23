@@ -9,25 +9,29 @@
         </button>
       </header>
       <main class="side-menu-content">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
-          ut ratione distinctio consequuntur placeat magni quo, perspiciatis
-          laborum nihil necessitatibus, commodi facilis! Consequuntur suscipit
-          quaerat atque ut culpa eos rerum!
-        </p>
+        <auth-form :my-event="handleMyEvent" :type="typeOfForm"></auth-form>
       </main>
-      <footer class="side-menu-footer">
-        <button @click="toggleSideMenu">Voltar ao cardapio</button>
-      </footer>
+      <footer class="side-menu-footer"></footer>
     </div>
   </section>
 </template>
 
 <script>
+import AuthForm from '@/components/AuthForm/AuthForm.vue';
 export default {
+  components: { AuthForm },
+  emits: ['my-event'],
+  data() {
+    return {
+      typeOfForm: 'login',
+    }
+  },
   methods: {
     toggleSideMenu() {
       this.$store.commit('toggleSideMenu');
+    },
+    handleMyEvent(value) {
+      this.typeOfForm = value;
     },
   },
 };

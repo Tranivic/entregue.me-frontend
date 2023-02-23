@@ -1,0 +1,54 @@
+.login-container, .register-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $main-black;
+  h1 {
+    font-family: $base-font-family;
+    font-size: $title-font-size;
+    font-weight: $title-weight;
+    padding: $base-padding;
+    align-self: center;
+  }
+  h2 {
+    font-family: $base-font-family;
+    font-size: medium;
+    font-weight: $title-weight;
+    padding: $base-padding;
+    align-self: center;
+  }
+  a{
+    cursor: pointer;
+    color: $main-yellow;
+    text-decoration: underline;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $base-padding;
+    label{
+      visibility: hidden;
+    }
+    input {
+      padding: $base-padding;
+      margin: $base-padding;
+      border: none;
+      border-radius: $base-radius;
+      font-family: $base-font-family;
+      font-size: $base-font-size;
+      font-weight: $title-weight;
+      background-color: $main-white;
+      box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.356);
+    }
+    button {
+      @include btn-default;
+      background-color: $main-yellow;
+      padding: $base-padding;
+      margin: $base-margin;
+      border-radius: $base-radius;
+      color: $main-white;
+    }
+  }
+}
