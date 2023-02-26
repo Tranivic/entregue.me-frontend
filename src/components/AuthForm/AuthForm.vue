@@ -9,7 +9,7 @@
             <input type="password" required placeholder="Senha" v-model="formData.userPassword" />
             <button type="submit">Entrar</button>
         </form>
-        <h2>Ainda não tem uma conta? Clique <a >aqui</a> para cadastrar!</h2>
+        <h2>Ainda não tem uma conta? Clique <a @click="$emit('changeForm')">aqui</a> para cadastrar!</h2>
     </div>
     <div v-else class="register-container">
         <h1>Cadastre-se e aproveite nossas ofertas!</h1>
@@ -24,7 +24,10 @@
             <input type="password" required placeholder="Confirme sua senha" v-model="formData.userPasswordConfirmed" />
             <button type="submit">Cadastrar</button>
         </form>
-        <h2>Já tem uma conta? Clique <a>aqui</a> para fazer login!</h2>
+        <h2>
+            Já tem uma conta? Clique <a @click="$emit('changeForm')">aqui</a> para
+            fazer login!
+        </h2>
     </div>
 </keep-alive>
 </template>

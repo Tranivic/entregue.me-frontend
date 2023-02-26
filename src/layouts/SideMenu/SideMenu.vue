@@ -9,7 +9,10 @@
         </button>
       </header>
       <main class="side-menu-content">
-        <auth-form :my-event="handleMyEvent" :type="typeOfForm"></auth-form>
+        <auth-form
+          @change-form="changeTypeOfForm"
+          :type="typeOfForm"
+        ></auth-form>
       </main>
       <footer class="side-menu-footer"></footer>
     </div>
@@ -19,12 +22,14 @@
 <script>
 import AuthForm from '@/components/AuthForm/AuthForm.vue';
 export default {
-  components: { AuthForm },
-  emits: ['my-event'],
+  emits: ['changeForm'],
+  components: {
+    AuthForm,
+  },
   data() {
     return {
       typeOfForm: 'login',
-    }
+    };
   },
   methods: {
     toggleSideMenu() {
@@ -32,6 +37,11 @@ export default {
     },
     handleMyEvent(value) {
       this.typeOfForm = value;
+    },
+    changeTypeOfForm() {
+      this.typeOfForm === 'login'
+        ? (this.typeOfForm = 'signup')
+        : (this.typeOfForm = 'login');
     },
   },
 };
