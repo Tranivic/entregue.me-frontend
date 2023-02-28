@@ -1,16 +1,22 @@
 export default {
-    namespaced: true,
-    state: {
-        isLogged: false,
-        typeOfForm: 'login',
+  namespaced: true,
+  state: {
+    typeOfAuthForm: 'login',
+    token: null,
+    user: null,
+  },
+  getters: {
+    userIsAuthenticated(state) {
+      return !!state.token;
     },
-    getters: {
-       
+  },
+  mutations: {
+    setToken(state, token) {
+      state.token = token;
     },
-    mutations: {
-        
+    setUser(state, user) {
+      state.user = user;
     },
-    actions: {
-       
-    }
+  },
+  actions: {},
 };

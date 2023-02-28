@@ -2,7 +2,7 @@ header {
   .superior {
     @include flex(center);
     background-color: $main-yellow;
-    height: 7rem;
+    height: 6.5rem;
     justify-content: space-between;
 
     .logo-container {

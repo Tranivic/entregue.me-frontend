@@ -8,14 +8,12 @@
     font-family: $base-font-family;
     font-size: $title-font-size;
     font-weight: $title-weight;
-    padding: $base-padding;
     align-self: center;
   }
   h2 {
     font-family: $base-font-family;
     font-size: medium;
     font-weight: $title-weight;
-    padding: $base-padding;
     align-self: center;
   }
   a{
@@ -33,7 +31,6 @@
     }
     input {
       padding: $base-padding;
-      margin: $base-padding;
       border: none;
       border-radius: $base-radius;
       font-family: $base-font-family;

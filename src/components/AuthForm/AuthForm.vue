@@ -21,7 +21,7 @@
             <label for="password">Senha</label>
             <input type="password" required placeholder="Senha" v-model="formData.userPassword" />
             <label for="password">Confirme sua senha</label>
-            <input type="password" required placeholder="Confirme sua senha" v-model="formData.userPasswordConfirmed" />
+            <input type="password" required placeholder="Confirme sua senha" v-model="formData.userPasswordConfirm" />
             <button type="submit">Cadastrar</button>
         </form>
         <h2>
@@ -46,7 +46,7 @@ export default {
             formData: {
                 userEmail: '',
                 userPassword: '',
-                userPasswordConfirmed: '',
+                userPasswordConfirm: '',
                 userName: '',
             },
         };
@@ -64,7 +64,7 @@ export default {
             const userSignupData = {
                 email: this.formData.userEmail,
                 password: this.formData.userPassword,
-                passwordIsConfirmed: this.formData.userPassword === this.formData.userPasswordConfirmed,
+                passwordIsConfirmed: this.formData.userPassword === this.formData.userPasswordConfirm,
                 name: this.formData.userName,
             };
             console.log(userSignupData);
